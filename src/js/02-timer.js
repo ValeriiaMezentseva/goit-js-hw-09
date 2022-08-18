@@ -40,16 +40,6 @@ refs.startBtn.addEventListener('click', onStartBtnClick);
 
 refs.startBtn.disabled = true;
 
-// function getValidDate(firstDate, secondDate) {
-//     if (firstDate > secondDate) {
-//         refs.startBtn.disabled = false;
-//     } else {
-//         Notiflix.Notify.failure('Please choose a date in the future', {
-//             position: 'center-top',
-//         });
-// }
-// }
-
 function onStartBtnClick() {
     refs.startBtn.disabled = true;
     intervalId = setInterval(setRemainingTime, 1000)
